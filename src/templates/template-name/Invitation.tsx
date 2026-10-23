@@ -16,7 +16,7 @@ export function Invitation({ event, onSubmitRegistration }: InvitationProps) {
     const [ticket, setTicket] = useState<TicketData | null>(null);
 
     useEffect(() => {
-        window.scrollTo({ top: 0 });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }, [step]);
 
     const handleSubmit = async (data: RegistrationData) => {
@@ -36,16 +36,28 @@ export function Invitation({ event, onSubmitRegistration }: InvitationProps) {
             }
         >
             {step === "opening" && (
-                <OpeningSection
-                    event={event}
-                    onEnter={() => setStep("register")}
-                />
+                <div key="opening" className="animate-fade-in">
+                    <OpeningSection
+                        event={event}
+                        onEnter={() => setStep("register")}
+                    />
+                </div>
             )}
             {step === "register" && (
-                <RegistrationSection event={event} onSubmit={handleSubmit} />
+                <div key="register" className="animate-fade-in">
+                    <RegistrationSection
+                        event={event}
+                        onSubmit={handleSubmit}
+                    />
+                </div>
             )}
             {step === "ticket" && registration && ticket && (
-                <TicketSection registration={registration} ticket={ticket} />
+                <div key="ticket" className="animate-fade-in">
+                    <TicketSection
+                        registration={registration}
+                        ticket={ticket}
+                    />
+                </div>
             )}
         </div>
     );
