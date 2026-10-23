@@ -5,7 +5,6 @@ import type { EventData } from "../types";
 
 interface Props {
     event: EventData;
-    /** Jika diisi, "Reservasi" menjadi tombol sungguhan. Jika tidak, hanya tampilan. */
     onReserve?: () => void;
 }
 

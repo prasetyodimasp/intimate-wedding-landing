@@ -201,7 +201,7 @@ export function RegistrationSection({ event, onSubmit }: Props) {
                                 <FormField
                                     label="Venue event"
                                     name="weddingVenue"
-                                    placeholder="Belum ada? Kosongin aja"
+                                    placeholder=""
                                     optional
                                 />
 
@@ -233,7 +233,6 @@ export function RegistrationSection({ event, onSubmit }: Props) {
                                 </fieldset>
                             </div>
 
-                            {/* garis sobekan tiket */}
                             <div className="relative -mx-6 my-8 border-t-2 border-dashed border-[var(--inv-ink)]/20">
                                 <span className="absolute -left-3 -top-3 size-6 rounded-full bg-[var(--inv-primary)]" />
                                 <span className="absolute -right-3 -top-3 size-6 rounded-full bg-[var(--inv-primary)]" />
