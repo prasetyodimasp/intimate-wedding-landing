@@ -161,15 +161,6 @@ export function RegistrationSection({ event, onSubmit }: Props) {
                                 />
                             </svg>
 
-                            <h2
-                                className={`${styles.display} pr-10 text-[2.4rem] leading-[1.02] text-[var(--inv-ink)]`}
-                            >
-                                Isi dulu, tiketmu{" "}
-                                <span className="italic text-[var(--inv-primary)]">
-                                    langsung jadi
-                                </span>
-                            </h2>
-
                             <div className="mt-7 flex flex-col gap-5">
                                 <FormField
                                     label="Nama"
@@ -208,9 +199,6 @@ export function RegistrationSection({ event, onSubmit }: Props) {
                                 <fieldset className="flex flex-col gap-2">
                                     <legend className="mb-1.5 flex items-center gap-2 text-sm font-medium text-[var(--inv-ink)]">
                                         Datang berapa orang?
-                                        <span className="rounded-full bg-[var(--inv-ink)]/10 px-2 py-0.5 text-[11px] font-normal">
-                                            maks. {invitationConfig.maxPax}
-                                        </span>
                                     </legend>
                                     <div className="flex gap-3">
                                         {paxOptions.map((n) => (

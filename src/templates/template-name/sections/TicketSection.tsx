@@ -51,7 +51,7 @@ export function TicketSection({ registration, ticket }: Props) {
                 ))}
             </dl>
 
-            <div className="mt-12 flex flex-col items-center gap-3">
+            <div className="mt-18 flex flex-col items-center gap-3">
                 <QRCodeSVG
                     value={ticket.qrValue}
                     size={200}
@@ -63,7 +63,7 @@ export function TicketSection({ registration, ticket }: Props) {
                 </p>
             </div>
 
-            <div className="mt-10 flex items-center justify-center gap-2 text-xs text-neutral-500">
+            <div className="mt-25 flex items-center justify-center gap-2 text-xs text-neutral-500">
                 <span>Ticketing by</span>
                 <img src={guestoryLogo} alt="Guestory" className="h-4 w-auto" />
             </div>
