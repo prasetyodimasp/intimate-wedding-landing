@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap");
+
+.root {
+  --inv-font-display: "Instrument Serif", Georgia, serif;
+  --inv-font-body: "Inter", system-ui, sans-serif;
+  --inv-ink: #2b1708;
+  --inv-cream: #fffbf5;
+  --inv-gold: #c9a24d;
+  --inv-gold-light: #f0d48a;
+  --inv-gold-deep: #8f6a28;
+  font-family: var(--inv-font-body);
+}
+
+.display {
+  font-family: var(--inv-font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Gradasi emas untuk bingkai dan garis */
+.gold {
+  background-image: linear-gradient(
+    135deg,
+    var(--inv-gold-light),
+    var(--inv-gold) 50%,
+    var(--inv-gold-deep)
+  );
+}
